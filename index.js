@@ -3,8 +3,6 @@ const mongoose = require('mongoose');
 const app = express();
 const usersRouter = require("./routes/users");
 app.use(express.json());
-require('dotenv').config();
-
 
 const PORT = 5500;
 const mongodbUrl = "mongodb+srv://crud:crud@cluster0.fmousch.mongodb.net/";
