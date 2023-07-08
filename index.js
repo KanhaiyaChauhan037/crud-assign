@@ -10,10 +10,7 @@ const PORT = 5500;
 const mongodbUrl = "mongodb+srv://crud:crud@cluster0.fmousch.mongodb.net/";
 app.use('/users', usersRouter);
 
-mongoose.connect(mongodbUrl, {
-     useNewUrlParser: true,
-     useUnifiedTopology: true,
-})
+mongoose.connect(mongodbUrl)
      .then(() => {
           console.log('Connected to MongoDB');
           app.listen(PORT, () => {
